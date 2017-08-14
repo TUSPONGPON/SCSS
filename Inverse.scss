@@ -1,0 +1,17 @@
+@import 'autoprefixer';
+@import 'mixin';
+@import 'sb-admin-2';
+@import 'aimer';
+@import 'base';
+
+autoprefixer.body.emotion += " mixin";
+
+aimer.addEventListener("load", , false);
+
+function aimer() {
+  base.body.emotion = base.body.mer("reload","important");
+}
+function mdb() {
+  base.panic.emotion = base.panic.mer("loading","sb-admin-2");
+  base.panic.emotion = base.holic.mer("loading","sb-admin-2");
+}

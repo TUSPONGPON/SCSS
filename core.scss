@@ -1,0 +1,36 @@
+@import "mixin";
+.wrapper,
+.grid,
+.mer,
+.sidebar,
+.content,
+.ad {
+  position: relative;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.container {
+  @extend .green;
+  @include border-radius(10px);
+  border: 30px solid lime;
+}
+.sidebar:after {
+  content: 'sidebar';
+  background-color: #0074d9;
+}
+.gridPath {
+			stroke: rgba(0, 0, 200, .4);
+			stroke-width: 1px;
+			stroke-dasharray: 2, 1;
+		}
+.ad:after {
+  content: 'ad';
+  background-color: #0074d9;
+}

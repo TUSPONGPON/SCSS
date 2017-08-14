@@ -1,0 +1,40 @@
+/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB 4.3.1
+ *
+ *
+ * Copyright: Material Design for Bootstrap
+ * http://mdbootstrap.com/
+ *
+ * Read the license: http://mdbootstrap.com/license/
+ *
+ * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
+ *
+ */
+  
+@charset "utf-8";  
+
+// MDB Framework //
+
+// Mixins
+@import "assets/deeper/data/prefixer";
+@import "assets/deeper/data/mixins";
+
+// Variables
+@import "assets/deeper/data/colors"; 
+@import "assets/deeper/data/variables-b4";
+@import "assets/deeper/data/variables";  
+
+//Global
+@import "assets/deeper/global"; 
+  
+// MDB
+@import "assets/deeper/base";
+@import "assets/deeper/core";
+@import "assets/deeper/emotion";
+@import "assets/deeper/inverse";
+@import "assets/deeper/mdb";
+@import "assets/deeper/aimer";
+@import "assets/deeper/panic";
+@import "assets/deeper/holic";
+@import "assets/deeper/reload";  

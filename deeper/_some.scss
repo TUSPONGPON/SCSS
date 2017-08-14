@@ -1,0 +1,51 @@
+.mover {
+  width: 40vmin;
+  height: 40vmin;
+  border-radius: 10%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18vmin;
+}
+.mover.a {
+  background: hsl(220, 80%, 60%);
+  transform: translate(-50%, -50%) scale(.2) rotate(50deg);
+}
+
+.mover.b {
+  background: hsl(40, 80%, 60%);
+  transform: rotate(50deg) translate(-50%, -50%) scale(.4);
+}
+.mover.c {
+  background: hsl(0, 80%, 60%);
+  transform: scale(.3) rotate(50deg) translate(-50%, -50%);
+}
+.mover.d {
+  display: none;
+}
+@supports (translate: 1px 1px) {
+  .mover.d {
+    display: flex;
+    background: hsl(300, 80%, 60%);
+    
+    translate: -50% -50%;
+    scale: .3 .2;
+    rotate: 50deg;
+    opacity: .6;
+  }
+}
+p {
+    line-height: 200px;
+}
+
+body {
+  height: 100vh;
+  background: hsl(220, 12%, 12%);
+}
+
+span {
+    $np: length($pt-b);
+    font-size: 60px;
+}
+

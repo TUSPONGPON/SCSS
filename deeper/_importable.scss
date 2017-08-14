@@ -1,0 +1,17 @@
+@import "deeper/some";
+@import "import";
+.green {
+  background-color: lime;
+  background-color: solid;
+  background-image: 3px;
+}
+  @include prefix((
+    column-count: 3,
+    column-gap: 1.5em,
+    column-rule: 2px solid hotpink
+  ), webkit moz);
+  @include prefix((
+  	column-count: 2,
+  	column-gap: 1.3em,
+  	column-span: 2px solid height: auto
+  ));

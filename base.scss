@@ -1,0 +1,29 @@
+@import "library/mq-prefixed";
+@import 'sb-admin-2';
+@import 'sass/worker';
+@import 'aimer';
+@import 'autoprefixer';
+@import 'bootstrap';
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+  font-family: 'Kanit', sans-serif;
+  background: #bdc3c7;
+  color: #34495e;
+}
+a {
+  color: #c0392b;
+  font-size: 24px;
+}
+@mixin mq($point, $IE10: false, $query1: min, $query2: width) {
+    @if $IE10 == true{
+        .lt-ie10 & {
+            @content;
+        }
+    }
+
+    @media (#{$query1}-#{$query2}-#{$query1}: $point / $doc-font-size +em) {
+        @content;
+    }
+}
